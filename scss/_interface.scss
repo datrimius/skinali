@@ -1,0 +1,25 @@
+// Interface settings
+body {
+   @include light;
+   color: $text-color;
+}
+
+.button-o {
+   border: 2px solid $primary;
+   text-transform: uppercase;
+   padding: 12px 22px;
+   font-size: 12px;
+   @include bold;
+   color: $primary;
+   background-color: #ffffff;
+}
+
+.button {
+   padding: 25px 45px;
+   text-transform: uppercase;
+   border: none;
+   background: $primary;
+   color: #ffffff;
+   font-size: 15px;
+   @include bold;
+}
