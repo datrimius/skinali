@@ -39,7 +39,9 @@
    background: $primary;
    transition: 0.2 linear;
    transform: translateY(-200%);
+   opacity: 0;
    &_active {
+      opacity: 1;
       transform: translateY(0);
    }
    &__nav {
