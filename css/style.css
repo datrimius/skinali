@@ -48,6 +48,10 @@ body {
   color: #262626;
 }
 
+img {
+  max-width: 100%;
+}
+
 .section {
   padding: 100px 0;
 }
@@ -71,6 +75,7 @@ body {
   font-family: 'Proxima Nova Semibold', sans-serif;
   color: #507fe1;
   background-color: #ffffff;
+  cursor: pointer;
 }
 
 .button {
@@ -80,7 +85,41 @@ body {
   background: #507fe1;
   color: #ffffff;
   font-size: 15px;
+  cursor: pointer;
   font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.button-fitting {
+  height: 30px;
+  padding: 10px;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #507fe1;
+  background: #ffff;
+  border: none;
+  cursor: pointer;
+}
+
+.button-add {
+  height: 30px;
+  padding: 10px;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #ffff;
+  background: #7c9fe8;
+  border: none;
+  cursor: pointer;
+}
+
+.button-like {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffff;
+  background: #507fe1;
+  border: none;
+  cursor: pointer;
 }
 
 .bg-secondary {
@@ -450,6 +489,81 @@ input[type="checkbox"]:checked + label::before {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     margin-bottom: 50px;
+  }
+}
+
+.catalog {
+  background-color: #f5f6f8;
+}
+
+.catalog-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.catalog-card {
+  display: block;
+  max-width: 570px;
+  position: relative;
+  -webkit-box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
+          box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-card__image {
+  display: block;
+}
+
+.catalog-card__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.catalog-card__tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 12px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  text-transform: uppercase;
+  background-color: rgba(80, 127, 225, 0.6);
+  padding: 10px;
+  color: #ffff;
+  cursor: pointer;
+}
+
+.catalog__link {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.catalog__link-more {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.catalog__description {
+  display: block;
+  margin-top: 20px;
+}
+
+@media (max-width: 1199px) {
+  .catalog-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .catalog-card {
+    max-width: 470px;
   }
 }
 /*# sourceMappingURL=style.css.map */

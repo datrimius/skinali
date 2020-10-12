@@ -4,6 +4,10 @@ body {
    color: $text-color;
 }
 
+img {
+   max-width: 100%;
+}
+
 .section {
    padding: 100px 0;
    &-title {
@@ -24,6 +28,7 @@ body {
    @include bold;
    color: $primary;
    background-color: #ffffff;
+   cursor: pointer;
 }
 
 .button {
@@ -33,7 +38,38 @@ body {
    background: $primary;
    color: #ffffff;
    font-size: 15px;
+   cursor: pointer;
    @include bold;
+   &-fitting {
+      height: 30px;
+      padding: 10px;
+      font-size: 11px;
+      text-transform: uppercase;
+      color: $primary;
+      background: #ffff;
+      border: none;
+      cursor: pointer;
+   }
+   &-add {
+      height: 30px;
+      padding: 10px;
+      font-size: 11px;
+      text-transform: uppercase;
+      color: #ffff;
+      background: lighten($primary, 10%);
+      border: none;
+      cursor: pointer;
+   }
+   &-like {
+      height: 30px;
+      width: 30px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #ffff;
+      background: $primary;
+      border: none;
+      cursor: pointer;
+   }
 }
 .bg-secondary {
    background: $bg-secondary;
