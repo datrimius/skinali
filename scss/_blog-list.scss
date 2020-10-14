@@ -23,9 +23,9 @@
          overflow: hidden;
       }
       &__text {
-         display: flex;
-         justify-content: center;
-         align-items: center;
+         display: block;
+         padding: 30px;
+         text-align: center;
          min-height: 80px;
       }
       &__card {
@@ -40,11 +40,17 @@
 @media (max-width: 1199px) {
    .blog {
       &-list {
-         justify-content: space-around;
+         justify-content: center;
          &__card {
-            margin-right: 30px;
-            margin-left: 30px;
+            margin: 20px 20px;
          }
+      }
+   }
+}
+@media (max-width: 480px) {
+   .blog {
+      &__title {
+         font-size: 18px;
       }
    }
 }

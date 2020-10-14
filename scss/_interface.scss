@@ -40,6 +40,9 @@ img {
    font-size: 15px;
    cursor: pointer;
    @include bold;
+   &:hover {
+      cursor: pointer;
+   }
    &-fitting {
       height: 30px;
       padding: 10px;
@@ -105,9 +108,12 @@ input[type="checkbox"] {
 }
 
 @media (max-width: 576px) {
-   .button-o {
+   .button {
+      font-size: 10px;
+      &-o {
       font-size: 10px;
    }
+}
    .section {
       padding: 60px 0;
       &-title {
